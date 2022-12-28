@@ -6,11 +6,46 @@ width: 1440px;
 height: 1884px;
 background: #FFFFFF;
 }
-menu{
-position: absolute;
-width: 381px;
-height: 19px;
-left: 982px;
-top: 48px;
+.nav{
+display: flex;
+}
+.logo{
+
+margin-left: 30px;
+}
+.menu{
+padding: 10px;
+display: flex;
+justify-content: space-around;
+}
+
+.recherche{
+display: flex;
+margin-left: 30px;
+width: 200px;
+height: 50px;
+
+}
+.maps{
+    border-radius: 20px 0px 0px 20px;
+    background: #f2f2f2;
+    padding: 15px;
+    font-size: 20px;
+}
+.formulaire{
+padding: 10px;
+    background: blue;
+    border-radius: 0px 20px 20px 0px;
+    color: #FFFFFF;
+}
+.Filtre{
+display: flex;
+justify-content: space-around;
+}
+.button{
+padding: 20px;
+border-radius: 20px;
+background: #FFFFFF;
+
 }
 
