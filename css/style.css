@@ -2,6 +2,7 @@ body {
   position: relative;
   background: #ffffff;
   font-family: "Raleway", sans-serif;
+  width: 1400px;
 }
 header {
   display: flex;
@@ -9,7 +10,7 @@ header {
   left: 35px;
 }
 nav {
-width: 200px;
+  width: 200px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
@@ -46,6 +47,7 @@ width: 200px;
   display: flex;
   justify-content: space-around;
 }
+
 .button {
   padding: 10px;
   margin-top: 20px;
@@ -53,11 +55,99 @@ width: 200px;
   background: #ffffff;
   border: solid 1px #f2f2f2;
 }
+
 .button:hover {
   cursor: pointer;
   background-color: #deebff;
 }
+
 .icon {
   margin-right: 10px;
   color: #0065fc;
+}
+
+.section_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Hebergement {
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 880px;
+  height: 625px;
+  border-radius: 20px;
+}
+.block_card_hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card_hebergement_details {
+  background-color: #ffffff;
+  width: 246px;
+  height: 280px;
+  border-radius: 20px;
+  color: #0065fc;
+}
+
+.card_hebergement_details img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.text_hebergement {
+  font-style: normal;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.text_prix {
+  font-style: normal;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.gris {
+  color: #f2f2f2;
+}
+.populaires {
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 420px;
+  height: 625px;
+  border-radius: 20px;
+}
+.card_populaires_details {
+  display: flex;
+  background-color: #ffffff;
+  width: 346px;
+  height: 144px;
+  border-radius: 20px;
+  color: #0065fc;
+}
+
+.card_populaires_details img {
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.Activités {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+}
+footer {
+display: flex;
+justify-content: space-around;
+background-color: #f2f2f2;
+border:  solid 1px #0065fc;
+}
+
+.block_footer {
+display: block;
 }
