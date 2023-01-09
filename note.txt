@@ -1,186 +1,47 @@
-  <body>
-    <header></header>
-    <section>
-      <div class="hebergement">
-        <h1>Hébergement à Marseille</h1>
-        <div class="card_hebergement_1">
-          <div class="card_hebergement_details">
+       <div class="populaires">
+        <h2>Les plus populaires</h2>
+        <div class="block_card_populaires">
+          <div class="card_populaires_details">
             <img
-              src="./image/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
+              src="./image/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              alt="Hôtel Les soleil du matin"
+              title="Hôtel Les soleil du matin"
             />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
+            <p class="text_hebergement">Hôtel Les soleil du matin</p>
+            <p class="text_prix">Nuit à partir de 128€</p>
             <i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
+            ><i class="fa-solid fa-star star gris"></i>
           </div>
-          <div class="card_hebergement_details">
+          <div class="card_populaires_details">
             <img
-              src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
+              src="./image/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              alt="Chambres d'hôtes Au coeur de l'eau"
+              title="Chambres d'hôtes Au coeur de l'eau"
             />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
+            <p class="text_hebergement">Chambres d'hôtes Au coeur de l'eau</p>
+            <p class="text_prix">Nuit à partir de 71€</p>
             <i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
+            ><i class="fa-solid fa-star star gris"></i>
           </div>
-          <div class="card_hebergement_details">
+          <div class="card_populaires_details">
             <img
-              src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
+              src="./image/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+              alt="Hôtel Bleu et Blanc"
+              title="Hôtel Bleu et Blanc"
             />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
+            <p class="text_hebergement">Hôtel Bleu et Blanc</p>
+            <p class="text_prix">Nuit à partir de 68€</p>
             <i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
             ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
+            ><i class="fa-solid fa-star star gris"></i>
           </div>
         </div>
-        <div class="card_hebergement_1">
-          <div class="card_hebergement_details">
-            <img
-              src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
-            />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
-            <i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
-          </div>
-          <div class="card_hebergement_details">
-            <img
-              src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
-            />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
-            <i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
-          </div>
-          <div class="card_hebergement_details">
-            <img
-              src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Auberge La Canebière"
-              title="Auberge La Canebière"
-              width="100%"
-              height="100"
-            />
-            <p class="title">Auberge La Canebière</p>
-            <p>Nuit à partir de 25€</p>
-            <i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star"></i
-            ><i class="fa-solid fa-star star-none"></i>
-          </div>
-        </div>
-        <p>En savoir plus</p>
       </div>
-      <div class="populaires">
-        <h1>Les plus populaires</h1>
-        <div class="card_populaire">
-            <div class="card">
-                <img
-                  src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="Auberge La Canebière"
-                  title="Auberge La Canebière"
-                  width="100%"
-                  height="100"
-                />
-                <p class="title">Auberge La Canebière</p>
-                <p>Nuit à partir de 25€</p>
-                <i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star-none"></i>
-              </div>
-              <div class="card">
-                <img
-                  src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="Auberge La Canebière"
-                  title="Auberge La Canebière"
-                  width="100%"
-                  height="100"
-                />
-                <p class="title">Auberge La Canebière</p>
-                <p>Nuit à partir de 25€</p>
-                <i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star-none"></i>
-              </div>
-              <div class="card">
-                <img
-                  src="./image/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="Auberge La Canebière"
-                  title="Auberge La Canebière"
-                  width="100%"
-                  height="100"
-                />
-                <p class="title">Auberge La Canebière</p>
-                <p>Nuit à partir de 25€</p>
-                <i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star"></i
-                ><i class="fa-solid fa-star star-none"></i>
-              </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div>
-        <h1>Activités à Marseille</h1>
-      </div>
-    </section>
-    <footer class="footer">
-      <div>
-        <h3>A propos</h3>
-        <p>Fonctionnement du Site</p>
-        <p>Conditions générales</p>
-        <p>Données et confidentialité</p>
-      </div>
-      <div>
-        <h3>Nos hébergements</h3>
-        <p>Carte qualité</p>
-        <p>Proposer votre hôtel</p>
-      </div>
-      <div>
-        <h3>Assistance</h3>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
-      </div>
-    </footer>
-  </body>
