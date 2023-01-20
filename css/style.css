@@ -22,8 +22,8 @@ header {
   justify-content: space-between;
 }
 .visible_format_tel {
-display: none;
-visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 /*Class réutilisable*/
 .backgroundGris {
@@ -72,7 +72,7 @@ visibility: hidden;
 
 #nav a {
   display: inline-block;
-  margin: 0 40xp;
+  margin: 0;
 }
 
 .logo_booki {
@@ -296,7 +296,21 @@ footer {
   body {
     width: auto;
   }
-
+  .logo_booki {
+    margin-left: 40px;
+  }
+  .main_h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .main_p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .cacher {
     visibility: hidden;
   }
@@ -304,6 +318,8 @@ footer {
   .filtre {
     width: 100%;
     justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   #herbergement-et-populaire {
@@ -312,9 +328,8 @@ footer {
   }
 
   #hebergement {
-    
+    margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 40px;
   }
 
   #populaire {
@@ -322,7 +337,7 @@ footer {
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .blockPopulaire {
@@ -334,6 +349,7 @@ footer {
   .cartePopulaire {
     width: 252px;
     height: 144px;
+    margin-right: 10px;
   }
 
   .PopulaireImg {
@@ -381,22 +397,22 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   .visible_format_tel {
-  width: 100%;
-  display: flex;
-  visibility: visible;
+    width: 100%;
+    display: flex;
+    visibility: visible;
   }
   .btn_1 {
-  width: 50%;
-  height: 5px;
-  background-color: #f2f2f2;
-  border: none;
-  } 
+    width: 50%;
+    height: 5px;
+    background-color: #f2f2f2;
+    border: none;
+  }
   .btn_1:hover {
     background-color: #0065fc;
   }
-  
+
   .logo_booki {
     margin-top: 20px;
     margin-left: auto;
@@ -439,8 +455,8 @@ footer {
     margin-left: 20px;
   }
   .btn_smartphone {
-   columns: 2;
-   margin-left: 15px;
+    columns: 2;
+    margin-left: 15px;
   }
   .btn {
     width: 90%;
@@ -451,7 +467,6 @@ footer {
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
-  
   }
 
   .icon {
