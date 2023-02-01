@@ -101,15 +101,25 @@ nav a:hover {
 }
 .logo_booki {
   width: 60px;
+  margin-left: 40px;
+}
+.main_h1 {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
+.main_p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 /***block formulaire*********/
 
-.formulaire {
+form {
   display: flex;
+  margin-left: 40px;
 }
 
-.formulaire input {
+form input {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -117,7 +127,7 @@ nav a:hover {
   border: 1px solid #f2f2f2;
 }
 
-.formulaire button {
+form button {
   width: 132px;
   height: 49px;
   background-color: #0065fc;
@@ -208,7 +218,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.hebergement_img {
+.hebergement_carte img {
   width: 246px;
   object-fit: cover;
   height: 124px;
@@ -228,12 +238,12 @@ aside {
   justify-content: space-between;
 }
 
-.Populaire_block {
+.populaire_block {
   display: flex;
   flex-direction: column;
 }
 
-.Populaire_carte {
+.populaire_carte {
   width: 420px;
   height: 154px;
   margin-top: 20px;
@@ -242,11 +252,11 @@ aside {
   border-radius: 20px;
 }
 
-.Populaire_carte:hover {
+.populaire_carte:hover {
   cursor: pointer;
 }
 
-.populaire_img {
+.populaire_carte img {
   width: 137px;
   border: 5px solid #ffffff;
   object-fit: cover;
@@ -261,17 +271,17 @@ aside {
   margin-bottom: 30px;
 }
 
-.activite-carte {
+.activite_carte {
   display: block;
   border-radius: 0px 0px 20px 20px;
   background: #ffffff;
   padding-left: 20px;
   box-shadow: 5px 5px 5px #f2f2f2;
   max-width: 300px;
-  width: 100%;
+  width: 25%;
 }
 
-.activite_carte_p {
+.activite_carte p {
   margin-left: 20px;
   font-style: normal;
   font-weight: 700;
@@ -279,10 +289,10 @@ aside {
   line-height: 19px;
 }
 
-.activite_img {
+.activite_carte img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  width: 300px;
+  width: 100%;
   height: 440px;
 }
 
@@ -298,12 +308,12 @@ footer {
   padding-right: 200px;
 }
 
-.block-footer {
+footer div {
   display: flex;
   flex-direction: column;
 }
 
-.block-footer ul {
+footer ul {
   padding: 0;
 }
 
@@ -316,8 +326,7 @@ footer h2 {
 
 /**********************Reponsive pout tablette************************/
 
-@media only screen and (max-width: 991px) {
-
+@media only screen and (max-width: 992px) {
   /**************class réutilisable***********************/
   .carte_text_700 {
     font-style: normal;
@@ -341,16 +350,16 @@ footer h2 {
     display: block;
     visibility: visible;
   }
-  
+
   /**********body*******/
-  
+
   body {
     width: auto;
     max-width: 991px;
     margin: 0 auto;
   }
-  
-/**header************/
+
+  /**header************/
 
   .logo_booki {
     margin-left: 40px;
@@ -359,35 +368,34 @@ footer h2 {
     margin-right: 20px;
   }
   /***main***********/
-  
+
   .main_h1 {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+
   .main_p {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+
   /**formulaire***********/
   form {
     margin-left: 40px;
     margin-right: 40px;
   }
-/************block filtre**********/
-  .filtre h2 {
-    margin-left: 30px;
-  }
-  
+  /************block filtre**********/
   .filtre {
     width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
   }
-  
-/**********hebergement**************/
+  .filtre h2 {
+    margin-left: 30px;
+  }
+
+  /**********hebergement**************/
 
   #herbergement_et_populaire {
     display: flex;
@@ -398,7 +406,9 @@ footer h2 {
     margin-left: 40px;
     margin-right: 40px;
   }
-/********populaire********/
+
+  /********populaire********/
+
   #populaire {
     display: flex;
     flex-direction: column;
@@ -407,36 +417,34 @@ footer h2 {
     margin-top: 40px;
   }
 
-  .Populaire_block {
+  .populaire_block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .Populaire_carte {
+  .populaire_carte {
     max-width: 252px;
     height: 144px;
     margin-right: 10px;
     width: 100%;
   }
 
-.populaire_img {
+  .populaire_carte img {
     width: 106px;
     height: 135px;
   }
 
-.populaire_h1 {
-  margin-left: 40px;
-}
+  /**********Activité*********/
 
-/**********Activité*********/
-
-  .activite-carte {
+  .activite_carte {
     width: 182px;
     height: 267px;
   }
 
-  .activite_img {
+  .activite_carte img {
     width: 182px;
     height: 267px;
   }
@@ -445,15 +453,14 @@ footer h2 {
     margin-bottom: 80px;
     margin-left: 20px;
     margin-right: 20px;
-}
+  }
 }
 
 /**********************Reponsive pout téléphone************************/
 
-@media only screen and (max-width: 767px) {
-
+@media only screen and (max-width: 768px) {
   /**********class réutilisable********/
-  
+
   .carte_text_700 {
     font-style: normal;
     font-weight: 700;
@@ -467,7 +474,7 @@ footer h2 {
     font-size: 13px;
     line-height: 15px;
   }
-  
+
   .display_mobile {
     display: block;
     visibility: visible;
@@ -477,15 +484,15 @@ footer h2 {
     display: none;
     visibility: hidden;
   }
-  
+
   /***********Body********/
   body {
     width: auto;
     max-width: 767px;
     margin: 0 auto;
   }
-  
- /****header********/
+
+  /****header********/
 
   header {
     display: flex;
@@ -500,6 +507,7 @@ footer h2 {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
 
   nav li {
@@ -507,7 +515,7 @@ footer h2 {
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
   }
-  
+
   nav li:hover {
     border-top: 2px solid transparent;
     border-bottom: 2px solid #0065fc;
@@ -518,8 +526,8 @@ footer h2 {
     margin-left: auto;
     margin-right: auto;
   }
-  
-/************class le main*********/
+
+  /************class le main*********/
 
   .main_h1 {
     margin-left: 30px;
@@ -529,7 +537,7 @@ footer h2 {
     font-size: 22px;
     line-height: 26px;
   }
-  
+
   .main_p {
     margin-left: 30px;
     align-items: center;
@@ -538,15 +546,15 @@ footer h2 {
     font-size: 16px;
     line-height: 19px;
   }
-  
+
   /******formulaire****************/
-  
-  .formulaire {
+
+  form {
     margin-left: 30px;
     margin-right: 10px;
   }
-  
-/*******champs filtre et bouton***********/
+
+  /*******champs filtre et bouton***********/
 
   .filtre {
     display: flex;
@@ -557,7 +565,7 @@ footer h2 {
   .filtre h2 {
     margin-left: 40px;
   }
-  
+
   .filtre button {
     width: 100%;
     margin-top: 10px;
@@ -568,61 +576,65 @@ footer h2 {
     font-size: 11px;
     line-height: 13px;
   }
-  
+
   .btn_smartphone {
     columns: 2;
     margin-left: 30px;
     margin-right: 15px;
   }
-  
+
   .icon {
     width: 21px;
     height: 20px;
   }
-  
+
   /****populaire************/
-  
+
   .smartphone {
     justify-content: center;
     padding: 10px;
   }
-  
+
   #populaire {
     background-color: #f2f2f2;
     margin: 0;
     border-radius: 0;
   }
-  
-  .Populaire_block {
+
+  .populaire_block {
     display: flex;
     flex-direction: column;
   }
-  
-  .Populaire_carte {
+
+  .populaire_carte {
     max-width: 767px;
     width: 100%;
   }
 
-  .populaire_img {
-    width: 40%;
-    object-fit: cover;
+  .populaire_carte img {
+    width: 106px;
+    height: 135px;
   }
 
   /**********hebergement*****************/
-  
+
   #herbergement_et_populaire {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
   }
-  
+   #hebergement {
+    margin-right: 0;
+    margin-left: 0;
+   }
+   
   .hebergement_h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
   }
-  
+
   .section_hebergement {
     background-color: #ffffff;
     border-radius: 0;
@@ -636,7 +648,7 @@ footer h2 {
   }
 
   .hebergement_carte {
-    width: 90%;
+    width: 100%;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -652,7 +664,7 @@ footer h2 {
     color: #f2f2f2;
   }
 
-  .hebergement_img {
+  .hebergement_carte img {
     width: 100%;
     object-fit: cover;
     height: 124px;
@@ -660,13 +672,17 @@ footer h2 {
   }
 
   /****activite*****************/
+  #activite {
+    margin-top: 40px;
+  }
 
   .activite_block {
     display: flex;
     flex-direction: column;
   }
 
-  .activite-carte {
+  .activite_carte {
+    padding-left: 0px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
@@ -675,14 +691,14 @@ footer h2 {
     box-shadow: 5px 5px 5px #f2f2f2;
   }
 
-  .activite_img {
-    width: 90%;
+  .activite_carte img {
+    width: 100%;
     object-fit: cover;
     height: 70%;
     border-radius: 20px 20px 0px 0px;
   }
-  
-/*********Footer**************/
+
+  /*********Footer**************/
 
   footer {
     display: flex;
@@ -692,19 +708,19 @@ footer h2 {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
+  footer div {
+    margin-left: 30px;
+    padding: 10px;
+  }
+
   footer ul {
     display: flex;
     flex-direction: column;
   }
-  
+
   footer li {
     display: flex;
     flex-direction: column;
-  }
-  
-  .block-footer {
-    margin-left: 30px;
-    padding: 10px;
   }
 }
