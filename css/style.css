@@ -10,6 +10,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
 body {
   font-family: "Raleway", sans-serif;
   max-width: 1400px;
@@ -21,16 +22,23 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.visible_format_tel {
-  display: none;
-  visibility: hidden;
-}
+
 /*Class réutilisable*/
-.backgroundGris {
+.display_mobile {
+  visibility: hidden;
+  display: none;
+}
+
+.display_desktop {
+  display: block;
+  visibility: visible;
+}
+
+.background_gris {
   background: #f2f2f2;
 }
 
-.marginLeftAndRight {
+.margin_left_and_right {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -38,8 +46,8 @@ header {
 .carte_text_700 {
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 19px;
   color: #000000;
 }
 
@@ -50,6 +58,7 @@ header {
   line-height: 16px;
   color: #000000;
 }
+
 .flex {
   display: flex;
 }
@@ -57,47 +66,58 @@ header {
 .align-items {
   align-items: center;
 }
+
+.active {
+  color: #0065fc;
+}
+
+.inactive {
+  color: #f2f2f2;
+}
 /*Header*/
 
-#nav {
+nav {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-#nav li {
+nav li {
   display: inline;
   padding: 15px 20px 15px 20px;
+  border-top: 2px solid transparent;
 }
 
-#nav a {
+nav li:hover {
+  border-top: 2px solid #0065fc;
+}
+nav a {
   display: inline-block;
   margin: 0;
 }
 
+nav a:hover {
+  color: #0065fc;
+}
 .logo_booki {
   width: 60px;
 }
 
-.hebergement_lien:hover {
-  color: #0065fc;
-  text-decoration: underline #0065fc;
+/***block formulaire*********/
+
+.formulaire {
+  display: flex;
 }
 
-.Activites_lien:hover {
-  color: #0065fc;
-  text-decoration: underline #0065fc;
-}
-/*block formulaire*/
-
-.input_text {
+.formulaire input {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  border: 1px solid #f2f2f2;
 }
 
-.BtnRechercher {
+.formulaire button {
   width: 132px;
   height: 49px;
   background-color: #0065fc;
@@ -107,12 +127,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-}
-
-/*formulaire*/
-
-.formulaire {
-  display: flex;
+  border: 1px solid #f2f2f2;
 }
 
 .maps {
@@ -123,10 +138,7 @@ header {
   background-color: #f2f2f2;
 }
 
-.cacher {
-  visibility: hidden;
-  display: none;
-}
+/**********Block filtre*****/
 
 .filtre {
   width: 950px;
@@ -134,9 +146,7 @@ header {
   align-items: center;
 }
 
-/*Block filtre*/
-
-.btn {
+.filtre button {
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   border: solid 2px #d9d9d9;
@@ -149,75 +159,81 @@ header {
   margin-left: 20px;
 }
 
-.btn:hover {
+.filtre button:hover {
   cursor: pointer;
   background-color: #f2f2f2;
 }
 
-.icon {
+.filtre i {
   margin-right: 10px;
   color: #0065fc;
 }
 
-/*herbergement-et-populaire"*/
+/***herbergement_et_populaire********/
 
-#herbergement-et-populaire {
+#herbergement_et_populaire {
   display: flex;
 }
-/*Block hébergement*/
 
-.sectionHebergement {
+/*******Block hébergement***/
+
+.hebergement_h2 {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.section_hebergement {
   border-radius: 20px;
   padding: 20px;
 }
 
-.blockHebergement {
+.hebergement_block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
 }
 
-.carteHebergement {
+.hebergement_carte {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-.carteHebergement:hover {
+.hebergement_carte:hover {
   cursor: pointer;
 }
-.active {
-  color: #0065fc;
-}
 
-.inactive {
-  color: #f2f2f2;
-}
-
-.hebergementImg {
+.hebergement_img {
   width: 246px;
   object-fit: cover;
   height: 124px;
   border-radius: 20px 20px 0px 0px;
 }
-/*Block Populaire*/
+
+/***Block Populaire****/
+
 aside {
   border-radius: 20px;
   padding: 20px;
 }
-.divPopulaire {
+
+.populaire_div_h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.blockPopulaire {
+
+.Populaire_block {
   display: flex;
   flex-direction: column;
 }
 
-.cartePopulaire {
+.Populaire_carte {
   width: 420px;
   height: 154px;
   margin-top: 20px;
@@ -226,30 +242,33 @@ aside {
   border-radius: 20px;
 }
 
-.cartePopulaire:hover {
+.Populaire_carte:hover {
   cursor: pointer;
 }
 
-.PopulaireImg {
+.populaire_img {
   width: 137px;
   border: 5px solid #ffffff;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
 }
 
-/*Block Activité*/
+/****Block Activité******/
 
-.blockActivité {
+.activite_block {
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
 }
 
-.Activite-carte {
+.activite-carte {
   display: block;
   border-radius: 0px 0px 20px 20px;
   background: #ffffff;
   padding-left: 20px;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  max-width: 300px;
+  width: 100%;
 }
 
 .activite_carte_p {
@@ -260,31 +279,35 @@ aside {
   line-height: 19px;
 }
 
-.detailImg {
+.activite_img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   width: 300px;
   height: 440px;
 }
 
-/*Footer*/
+/****Footer****/
+
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #f2f2f2;
   margin-left: 20px;
   margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 200px;
 }
 
 .block-footer {
   display: flex;
   flex-direction: column;
 }
+
 .block-footer ul {
   padding: 0;
 }
-.h3_footer {
-  margin-bottom: 20px;
+
+footer h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -292,71 +315,10 @@ footer {
 }
 
 /**********************Reponsive pout tablette************************/
-@media only screen and (max-width: 992px) {
-  body {
-    width: auto;
-  }
-  .logo_booki {
-    margin-left: 40px;
-  }
-  .main_h1 {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .main_p {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  form {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .cacher {
-    visibility: hidden;
-  }
 
-  .filtre {
-    width: 100%;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+@media only screen and (max-width: 991px) {
 
-  #herbergement-et-populaire {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #hebergement {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  #populaire {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-  }
-
-  .blockPopulaire {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .cartePopulaire {
-    width: 252px;
-    height: 144px;
-    margin-right: 10px;
-  }
-
-  .PopulaireImg {
-    width: 106px;
-    height: 135px;
-  }
-
+  /**************class réutilisable***********************/
   .carte_text_700 {
     font-style: normal;
     font-weight: 700;
@@ -371,46 +333,184 @@ footer {
     line-height: 15px;
   }
 
-  .Activite-carte {
+  .display_mobile {
+    visibility: hidden;
+  }
+
+  .display_desktop {
+    display: block;
+    visibility: visible;
+  }
+  
+  /**********body*******/
+  
+  body {
+    width: auto;
+    max-width: 991px;
+    margin: 0 auto;
+  }
+  
+/**header************/
+
+  .logo_booki {
+    margin-left: 40px;
+  }
+  #nav {
+    margin-right: 20px;
+  }
+  /***main***********/
+  
+  .main_h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .main_p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  /**formulaire***********/
+  form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+/************block filtre**********/
+  .filtre h2 {
+    margin-left: 30px;
+  }
+  
+  .filtre {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/**********hebergement**************/
+
+  #herbergement_et_populaire {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hebergement {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+/********populaire********/
+  #populaire {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .Populaire_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Populaire_carte {
+    max-width: 252px;
+    height: 144px;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+.populaire_img {
+    width: 106px;
+    height: 135px;
+  }
+
+.populaire_h1 {
+  margin-left: 40px;
+}
+
+/**********Activité*********/
+
+  .activite-carte {
     width: 182px;
     height: 267px;
   }
 
-  .detailImg {
+  .activite_img {
     width: 182px;
     height: 267px;
   }
 
   #activite {
     margin-bottom: 80px;
-  }
+    margin-left: 20px;
+    margin-right: 20px;
 }
+}
+
 /**********************Reponsive pout téléphone************************/
-@media only screen and (max-width: 768px) {
-  /* CSS for smartphones */
-  span {
+
+@media only screen and (max-width: 767px) {
+
+  /**********class réutilisable********/
+  
+  .carte_text_700 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .carte_text_400 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  
+  .display_mobile {
+    display: block;
+    visibility: visible;
+  }
+
+  .display_desktop {
     display: none;
     visibility: hidden;
   }
+  
+  /***********Body********/
+  body {
+    width: auto;
+    max-width: 767px;
+    margin: 0 auto;
+  }
+  
+ /****header********/
 
   header {
     display: flex;
     flex-direction: column;
   }
 
-  .visible_format_tel {
+  nav {
     width: 100%;
+  }
+
+  nav ul {
+    justify-content: space-around;
     display: flex;
-    visibility: visible;
+    flex-direction: row;
   }
-  .btn_1 {
+
+  nav li {
     width: 50%;
-    height: 5px;
-    background-color: #f2f2f2;
-    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
-  .btn_1:hover {
-    background-color: #0065fc;
+  
+  nav li:hover {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #0065fc;
   }
 
   .logo_booki {
@@ -418,6 +518,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  
+/************class le main*********/
 
   .main_h1 {
     margin-left: 30px;
@@ -427,6 +529,7 @@ footer {
     font-size: 22px;
     line-height: 26px;
   }
+  
   .main_p {
     margin-left: 30px;
     align-items: center;
@@ -435,15 +538,15 @@ footer {
     font-size: 16px;
     line-height: 19px;
   }
+  
+  /******formulaire****************/
+  
   .formulaire {
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 10px;
   }
-  .cacher {
-    display: block;
-    visibility: visible;
-    color: #ffffff;
-  }
+  
+/*******champs filtre et bouton***********/
 
   .filtre {
     display: flex;
@@ -452,14 +555,11 @@ footer {
   }
 
   .filtre h2 {
-    margin-left: 20px;
+    margin-left: 40px;
   }
-  .btn_smartphone {
-    columns: 2;
-    margin-left: 15px;
-  }
-  .btn {
-    width: 90%;
+  
+  .filtre button {
+    width: 100%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -468,99 +568,74 @@ footer {
     font-size: 11px;
     line-height: 13px;
   }
-
+  
+  .btn_smartphone {
+    columns: 2;
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+  
   .icon {
     width: 21px;
     height: 20px;
   }
-  /*populaire*/
+  
+  /****populaire************/
+  
   .smartphone {
     justify-content: center;
     padding: 10px;
   }
+  
   #populaire {
     background-color: #f2f2f2;
     margin: 0;
     border-radius: 0;
   }
-  .blockPopulaire {
+  
+  .Populaire_block {
     display: flex;
     flex-direction: column;
   }
-
-  .cartePopulaire {
+  
+  .Populaire_carte {
+    max-width: 767px;
     width: 100%;
   }
 
-  .PopulaireImg {
+  .populaire_img {
     width: 40%;
     object-fit: cover;
   }
 
-  .carte_text_700 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .carte_text_400 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-  }
-
-  /*hebergement*/
-  #herbergement-et-populaire {
+  /**********hebergement*****************/
+  
+  #herbergement_et_populaire {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
   }
-
-  .sectionHebergement {
+  
+  .hebergement_h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .section_hebergement {
     background-color: #ffffff;
     border-radius: 0;
-    width: 100%;
+    padding: 0;
   }
 
-  .blockHebergement {
+  .hebergement_block {
     display: flex;
     flex-direction: column;
     padding: 5px;
   }
 
-  .carteHebergement {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 5px #f2f2f2;
-  }
-
-  .carteHebergement:hover {
-    cursor: pointer;
-  }
-
-  .inactive {
-    color: #f2f2f2;
-  }
-
-  .hebergementImg {
-    width: 100%;
-    object-fit: cover;
-    height: 124px;
-    border-radius: 20px 20px 0px 0px;
-  }
-
-  /*activite*/
-
-  .blockActivité {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Activite-carte {
+  .hebergement_carte {
     width: 90%;
     background-color: white;
     border-radius: 20px;
@@ -569,27 +644,65 @@ footer {
     box-shadow: 5px 5px 5px #f2f2f2;
   }
 
-  .detailImg {
+  .hebergement_carte:hover {
+    cursor: pointer;
+  }
+
+  .inactive {
+    color: #f2f2f2;
+  }
+
+  .hebergement_img {
     width: 100%;
+    object-fit: cover;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  /****activite*****************/
+
+  .activite_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activite-carte {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    box-shadow: 5px 5px 5px #f2f2f2;
+  }
+
+  .activite_img {
+    width: 90%;
     object-fit: cover;
     height: 70%;
     border-radius: 20px 20px 0px 0px;
   }
+  
+/*********Footer**************/
 
   footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+  
   footer ul {
     display: flex;
     flex-direction: column;
   }
+  
   footer li {
     display: flex;
     flex-direction: column;
   }
+  
   .block-footer {
     margin-left: 30px;
     padding: 10px;
