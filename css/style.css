@@ -151,6 +151,7 @@ form button {
 /**********Block filtre*****/
 
 .filtre {
+display: flex;
   width: 950px;
   justify-content: space-around;
   align-items: center;
