@@ -21,6 +21,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+main {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*Class réutilisable*/
@@ -67,6 +73,10 @@ header {
   color: #000000;
 }
 
+.padding_bottom {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
 .flex {
   display: flex;
 }
@@ -86,7 +96,7 @@ header {
 /*Header*/
 
 nav {
-  padding: 0;
+  padding-right: 10px;
   margin: 0;
   text-align: center;
 }
@@ -199,7 +209,6 @@ form button {
 /*******Block hébergement***/
 
 .hebergement_h2 {
-  margin-left: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -208,8 +217,8 @@ form button {
 
 .section_hebergement {
   border-radius: 20px;
-  padding: 20px;
-  margin-left: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .hebergement_block {
@@ -217,6 +226,13 @@ form button {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.hebergement_block a {
+  width: 30%;
+  max-width: 240px;
 }
 
 .hebergement_carte {
@@ -230,8 +246,14 @@ form button {
   cursor: pointer;
 }
 
+.hebergement_description {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
 .hebergement_carte img {
-  width: 246px;
+  width: 100%;
+  max-width: 246px;
   object-fit: cover;
   height: 124px;
   border-radius: 20px 20px 0px 0px;
@@ -241,7 +263,6 @@ form button {
 
 aside {
   border-radius: 20px;
-  padding: 20px;
 }
 
 .populaire_div_h2 {
@@ -256,9 +277,9 @@ aside {
 }
 
 .populaire_carte {
-  width: 420px;
   height: 154px;
   margin-top: 20px;
+  padding: 5px;
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
@@ -268,14 +289,36 @@ aside {
   cursor: pointer;
 }
 
-.populaire_carte img {
-  width: 137px;
-  border: 5px solid #ffffff;
+.populaire_carte h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.populaire_carte p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.populaire_image {
+  width: 40%;
+  min-width: 137px;
+  height: 100%;
+}
+.populaire_image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
 }
-.populaire_carte .active {
- padding-top: 40px;
+
+.populaire_details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 /****Block Activité******/
@@ -377,12 +420,24 @@ footer h2 {
     margin: 0 auto;
   }
   main span {
-  margin-left: 40px;
+    margin-left: 20px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  main {
+    padding-left: 0;
+    padding-right: 0;
   }
   /**********************header************/
 
   .logo_booki {
-    margin-left: 40px;
+    margin-left: 20px;
   }
   #nav {
     margin-right: 20px;
@@ -390,35 +445,38 @@ footer h2 {
   /***************main***********/
 
   .main_h1 {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .main_p {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   /**formulaire***********/
   form {
-    margin-left: 40px;
+    margin-left: 20px;
     margin-bottom: 10px;
   }
   form button {
-  width: auto;
+    width: auto;
   }
   form span {
-  margin-left: 0;
+    margin-left: 0;
   }
   /************block filtre**********/
   .filtre {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+  }
+  .filtre h2 {
+    margin-right: 30px;
+    margin-left: 20px;
   }
 
   .filtre button {
-    margin-right: 0;
-    margin-left: 0px;
-    padding: 5px;
+    margin-right: 5px;
+    margin-left: 0;
   }
 
   /**********hebergement**************/
@@ -427,12 +485,30 @@ footer h2 {
     display: flex;
     flex-direction: column;
   }
-
-  #hebergement {
-    margin-left: 40px;
-    margin-right: 40px;
+  .section_hebergement {
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 0px;
   }
 
+  #hebergement {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .hebergement_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hebergement_block a {
+    max-width: 246px;
+    width: 35%;
+  }
+
+  .hebergement_carte img {
+    width: 100%;
+  }
   /********populaire********/
 
   #populaire {
@@ -453,7 +529,6 @@ footer h2 {
   .populaire_block a {
     padding: 5px;
     width: 35%;
-
   }
 
   .populaire_carte {
@@ -463,10 +538,6 @@ footer h2 {
 
   .populaire_carte img {
     width: 106px;
-  }
-  
-  .populaire_carte div {
-    width: 50%;
   }
 
   /**********Activité*********/
@@ -524,6 +595,11 @@ footer h2 {
     margin: 0 auto;
   }
 
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   main span {
     margin-left: 20px;
   }
@@ -532,6 +608,8 @@ footer h2 {
   header {
     display: flex;
     flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   nav {
@@ -586,7 +664,12 @@ footer h2 {
 
   form {
     margin-left: 20px;
-
+  }
+  form input {
+    width: 60%;
+  }
+  form button {
+    width: 50px;
   }
 
   /*******champs filtre et bouton***********/
@@ -602,7 +685,7 @@ footer h2 {
   }
 
   .filtre button {
-    width: 48%;
+    width: 45%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -625,8 +708,10 @@ footer h2 {
   }
 
   /****populaire************/
-
-
+  aside {
+    border-radius: 20px;
+    padding: 0px;
+  }
   #populaire {
     background-color: #f2f2f2;
     margin: 0;
@@ -638,8 +723,8 @@ footer h2 {
     flex-direction: column;
   }
   .populaire_block a {
-   width: 100%;
-   height: 144px;
+    width: 100%;
+    height: 144px;
   }
 
   .populaire_carte {
@@ -647,13 +732,16 @@ footer h2 {
     width: 100%;
   }
 
-  .populaire_carte img {
-    width: 40%;
+  .populaire_image img {
+    width: 100%;
     object-fit: cover;
-
   }
-  .active {
-    padding-top: 10px;
+
+  .populaire_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85px;
   }
 
   /**********hebergement*****************/
@@ -673,6 +761,7 @@ footer h2 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+    padding-left: 20px;
   }
 
   .section_hebergement {
@@ -684,16 +773,16 @@ footer h2 {
   .hebergement_block {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+  }
+
+  .hebergement_block a {
+    max-width: 767px;
+    width: 100%;
   }
 
   .hebergement_carte {
-    width: 98%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 5px #f2f2f2;
+    max-width: 767px;
+    width: 100%;
   }
 
   .hebergement_carte:hover {
@@ -706,9 +795,8 @@ footer h2 {
 
   .hebergement_carte img {
     width: 100%;
+    max-width: 767px;
     object-fit: cover;
-    height: 124px;
-    border-radius: 20px 20px 0px 0px;
   }
   .hebergement_description {
     padding-left: 10px;
